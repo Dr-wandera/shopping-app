@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New Order Notification</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f6f8; font-family:Arial, Helvetica, sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f8; padding:20px;">
+    <tr>
+        <td align="center">
+            <table width="600" cellpadding="0" cellspacing="0"
+                   style="background-color:#ffffff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.05); padding:30px;">
+
+                <!-- Header -->
+                <tr>
+                    <td style="text-align:center; padding-bottom:20px;">
+                        <h2 style="margin:0; color:#e74c3c;">🛎 New Order Received!</h2>
+                    </td>
+                </tr>
+
+                <!-- Order Details -->
+                <tr>
+                    <td style="color:#333333; font-size:15px; line-height:1.6; padding-bottom:20px;">
+                        <p style="margin:0 0 10px;">
+                            <strong>Product:</strong> {{Product}}<br>
+                            <strong>Quantity:</strong> {{Quantity}}<br>
+                            <strong>SubTotal:</strong> KES {{SubTotal}}
+                        </p>
+
+                        <hr style="border:none; border-top:1px solid #e0e0e0; margin:20px 0;">
+
+                        <p style="margin:0 0 10px;">
+                            <strong>Customer Email:</strong> {{Customer Email}}<br>
+                            <strong>Phone:</strong> {{Phone}}<br>
+                            <strong>Location:</strong> {{Location}}
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Footer -->

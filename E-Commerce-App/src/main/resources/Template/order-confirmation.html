@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f4f6f8; font-family:Arial, Helvetica, sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f8; padding:20px;">
+    <tr>
+        <td align="center">
+
+            <table width="600" cellpadding="0" cellspacing="0"
+                   style="background-color:#ffffff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.05); padding:30px;">
+
+                <!-- Header -->
+                <tr>
+                    <td style="text-align:center; padding-bottom:20px;">
+                        <h2 style="margin:0; color:#2c3e50;">🛒 Order Confirmation</h2>
+                    </td>
+                </tr>
+
+                <!-- Greeting -->
+                <tr>
+                    <td style="color:#333333; font-size:15px; line-height:1.6;">
+                        <p>
+                            Dear <strong>{{firstName}}</strong>,
+                        </p>
+
+                        <p>
+                            Your order has been placed successfully.
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Order Details -->
+                <tr>
+                    <td>
+                        <table width="100%" cellpadding="10" cellspacing="0"
+                               style="border:1px solid #e0e0e0; border-radius:6px; background-color:#fafafa;">
+
+                            <tr>
+                                <td><strong>Order Number</strong></td>
+                                <td style="text-align:right;">{{orderNumber}}</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Total Amount</strong></td>
+                                <td style="text-align:right; color:#27ae60;">
+                                    KES {{totalAmount}}
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Order Date</strong></td>
+                                <td style="text-align:right;">{{orderDate}}</td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- Footer -->
+                <tr>
+                    <td style="padding-top:20px; font-size:14px; color:#333333; line-height:1.6;">
+                        <p style="margin:0 0 10px;">
+                            Thank you for shopping with us. We appreciate your trust!
+                        </p>
+
+                        <p style="margin:0;">
+                            Regards,<br>
+                            <strong>Ubuntu Shop</strong>
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

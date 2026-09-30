@@ -1,0 +1,51 @@
+server:
+  port: 8086
+
+## Database configuration
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/e_commerce_app
+    username: postgres
+    password: ${POSTGRESQL_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+## Email config
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: wanderafaustine94@gmail.com
+    password: vqeu jkel anag krmm
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+
+## Security config (secrete key)
+jwt:
+  secret: wanderafastinwisggrttsnkiuutfvadsafa56dfdgd
+
+  ## M_pesa configuration
+mpesa:
+  daraja:
+    consumer-key: M55Qjk56ReT9LWGCt2bgzUIfwo9NDBgCI0VRibwcQdy6Tr63
+    consumer-secret: 38VPpFgI4vQqqSx4cfOGgSH27RkFAAmHLDdEHA9IivN09DJpUA7skHLOLTFA4SDh
+
+    business-shortcode: 174379
+
+    passkey: passkey
+
+    stk-push-url: https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest
+
+    stk-push-callback-url: https://webhook.site/2dde2b56-d835-4980-a80c-ec1fbcebc1a2
+
