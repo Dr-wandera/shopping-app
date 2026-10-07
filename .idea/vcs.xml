@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/E-Commerce-App" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/E-Commerce-App/src/main/java/Wandera/E_Commerce/App" vcs="Git" />
   </component>
 </project>
